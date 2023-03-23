@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Call</title>
+    <!-- Add Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="DOMtask-8LocalStorage.js" defer></script>
+  </head>
+  <body class="bg-cover bg-center" style="background-image: url(reg1.jpg);">
+    <form
+      class="border border-orange-500 p-8 mx-auto my-12 max-w-3xl bg-white rounded-lg shadow-lg"
+      action="#"
+      onsubmit="signup(event)"
+    >
+      <div id="div1">
+        <h2 class="text-orange-500 text-center font-bold text-3xl mb-4">
+          Book a call
+        </h2>
+        <p class="text-center">
+          Book a call slot and our representative call you within 1hr of selected
+          time
+        </p>
+        <hr class="my-4 border-gray-300" />
+        <label class="block font-bold mb-2" for="name">Name :</label>
+        <input
+          class="w-full border border-gray-300 rounded py-2 px-3 mb-4"
+          type="text"
+          name="name"
+          id="na"
+        />
+
+        <label class="block font-bold mb-2" for="email">Email :</label>
+        <input
+          class="w-full border border-gray-300 rounded py-2 px-3 mb-4"
+          type="email"
+          name="email"
+          id="em"
+        />
+
+        <label class="block font-bold mb-2" for="phone">Phone :</label>
+        <input
+          class="w-full border border-gray-300 rounded py-2 px-3 mb-4"
+          type="number"
+          name="phone"
+          id="ph"
+          maxlength="10"
+        />
+
+        <label class="block font-bold mb-2" for="datetime">Time for Call :</label>
+        <div class="flex justify-between mb-4">
+          <input
+            class="w-5/12 border border-gray-300 rounded py-2 px-3"
+            type="date"
+            id="da"
+            name="datetime"
+          />
+          <input
+            class="w-5/12 border border-gray-300 rounded py-2 px-3"
+            type="time"
+            id="ti"
+            name="time"
+          />
+        </div>
+
+        <input
+          class="bg-blue-900 text-black font-bold py-2 px-4 rounded w-full cursor-pointer hover:bg-orange-900"
+          type="submit"
+          name="submit"
+          value="GET A CALL"
+        />
+      </div>
+    </form>
+  </body>
+</html
