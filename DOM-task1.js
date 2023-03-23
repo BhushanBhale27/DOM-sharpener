@@ -7,3 +7,5 @@ header.style.borderBottom = "4px solid black"
 const addItems = document.querySelector(".title");
 addItems.style.fontWeight = "bold";
 addItems.style.color = "green";
+
+
